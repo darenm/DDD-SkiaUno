@@ -1,0 +1,10 @@
+{
+  "profiles": {
+	"UnoSkia1.Windows (Package)": {
+	  "commandName": "MsixPackage"
+	},
+	"UnoSkia1.Windows (Unpackaged)": {
+	  "commandName": "Project"
+	}
+  }
+}

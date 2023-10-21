@@ -1,0 +1,10 @@
+{
+  "background_color": "#ffffff",
+  "description": "UnoSkia1",
+  "display": "standalone",
+  "name": "UnoSkia1",
+  "short_name": "UnoSkia1",
+  "start_url": "/index.html",
+  "theme_color": "#ffffff",
+  "scope": "/"
+}
