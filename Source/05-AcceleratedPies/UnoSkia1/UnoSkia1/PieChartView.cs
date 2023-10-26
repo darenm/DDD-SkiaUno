@@ -21,6 +21,7 @@ namespace UnoSkia1
         public void StartAnimation()
         {
             _ticksStarted = DateTime.Now.Ticks;
+            _isAnimationComplete = false;
             _isAnimationRunning = true;
         }
 
@@ -42,11 +43,12 @@ namespace UnoSkia1
                 animationFactor = 0f;
             }
 
-            if (animationFactor >= 1.0f)
+            if (animationFactor > 1.0f)
             {
                 _isAnimationRunning = false;
                 _isAnimationComplete = true;
                 animationFactor = 1.0f;
+                StartAnimation();
             }
 
             var totalValue = Slices.Sum(x => x.Value);

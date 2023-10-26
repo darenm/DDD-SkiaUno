@@ -50,7 +50,7 @@ namespace UnoSkia1
                 float y = explodeOffset * (float)Math.Sin(Math.PI * angle / 180);
 
                 canvas.Save();
-                canvas.Translate(x, y);
+                //canvas.Translate(x, y);
 
                 canvas.DrawPath(path, fillPaint);
                 canvas.DrawPath(path, strokePaint);
